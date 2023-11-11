@@ -12,7 +12,7 @@ const CoinCard = ({ coinPrice, btcPrice }) => {
         {coinPrice.market.substring(4)}
       </span>
       <span className="ml-2">
-        ₩{" "}
+        ₩&nbsp;
         {coinPrice.market.substring(0, 3) === "BTC"
           ? parseFloat(
               (coinPrice.trade_price * btcPrice).toFixed(2)
