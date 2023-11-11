@@ -6,6 +6,7 @@ import CoinCard from "./components/CoinCard";
 
 const App = () => {
   const [coinPrices, setCoinPrices] = useState();
+  const coinImgs = ["btc.png", "eth.png", "matic.png", "astr.png", "eos.png"];
 
   const getCoinPrices = async () => {
     try {
